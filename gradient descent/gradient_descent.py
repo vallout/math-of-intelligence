@@ -67,6 +67,7 @@ def compute_gradient(x1, x2, m_current, b_current, alpha=0.1):
     x2 -- second column of dataset
     m_current  -- current gradient of the linear function
     b_current  -- current y-intercept value of the linear function
+    alpha -- learningrate
 
 	Returns:
 	m_new -- corrected, new gradient
@@ -93,7 +94,8 @@ def run_gradient_descent(x1, x2, m, b, epochs=100, alpha=0.5):
     x2 -- second column of dataset
     m  -- gradient of the linear function
     b  -- y-intercept value
-    epochs
+    epochs -- number of epochs
+    alpha -- learningrate
 
 	Returns:
 	average_error -- average error over all training examples
